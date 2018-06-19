@@ -1,11 +1,10 @@
-## Writeup Template
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
+## Vehicle Detection
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 ---
 
-**Vehicle Detection Project**
+The goal of this project is to write a software pipeline to identify vehicles in a video from a front-facing camera on a car. This writeup provides a detailed explanation of the process used for vehicle detection. 
 
-The goals / steps of this project are the following:
+**Project Goals**
 
 * Perform a Histogram of Oriented Gradients (HOG) feature extraction on a labeled training set of images and train a classifier Linear SVM classifier
 * Optionally, you can also apply a color transform and append binned color features, as well as histograms of color, to your HOG feature vector. 
@@ -13,6 +12,19 @@ The goals / steps of this project are the following:
 * Implement a sliding-window technique and use your trained classifier to search for vehicles in images.
 * Run your pipeline on a video stream (start with the test_video.mp4 and later implement on full project_video.mp4) and create a heat map of recurring detections frame by frame to reject outliers and follow detected vehicles.
 * Estimate a bounding box for vehicles detected.
+
+**Project Files**
+
+The repository consists of the following files:
+- Main.ipynb (Notebook containing process breakdown and the pipeline)
+- Main.html (HTML version of the notebook with output cells)
+- image.p (Pickle file containing image data)
+- data.p (Pickle file containing training feature data)
+- project_video.mp4 (Video used for vehicle detection)
+- project_video_output.mp4 (Output video generated with vehicle detection)
+- test_video.mp4 (Video used for vehicle detection)
+- test_video_output.mp4 (Output video generated with vehicle detection)
+- README.md (Detailed description of vehicle detection process)
 
 [//]: # (Image References)
 [image1]: ./examples/car_not_car.png
@@ -24,15 +36,19 @@ The goals / steps of this project are the following:
 [image7]: ./examples/output_bboxes.png
 [video1]: ./project_video.mp4
 
-## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
-### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
+## Dataset
+
+The 
+Folders:
+- `data` : Images for training, containing feature extraction from images
+- `test_images` : Images for testing your pipeline on single frames
+- `output_images` : Results of test images
+- `examples` : examples of expected results
 
 ---
 ### Writeup / README
 
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  [Here](https://github.com/udacity/CarND-Vehicle-Detection/blob/master/writeup_template.md) is a template writeup for this project you can use as a guide and a starting point.  
 
-You're reading it!
 
 ### Histogram of Oriented Gradients (HOG)
 
