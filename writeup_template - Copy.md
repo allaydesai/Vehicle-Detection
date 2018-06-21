@@ -39,7 +39,7 @@ The repository consists of the following files:
 [image15]: ./examples/NonVehicle_HOG_1.png
 [image16]: ./examples/NonVehicle_HOG_2.png
 [image17]: ./examples/NonVehicle_HOG_3.png
-[image3]: ./examples/sliding_windows.jpg
+[image3]: ./examples/sliding_window_combined.jpg
 [image4]: ./examples/sliding_window_1.png
 [image18]: ./examples/sliding_window_2.png
 [image19]: ./examples/sliding_window_3.png
